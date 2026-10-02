@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ayuda escolar</title>
+    <link rel="stylesheet" href="ayuda_escolar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="ayuda escolar.js" defer></script>
+</head>
+<body>
+    <!---------------------------------->
+    <!--|estructuracion_ayuda_escolar|-->
+    <!---------------------------------->
+    <header class="encabezado">
+        <div class="icono_encabezado">
+            <i class="fa-solid fa-circle-question"></i>
+        </div>
+        <div class="contenido_encabezado">
+            <span class="etiqueta">CENTRO DE AYUDA</span>
+            <h1>Ayuda Escolar</h1>
+            <p>Encuentra respuestas a preguntas frecuentes.</p>
+        </div>
+    </header>
+    <!--------------------------------------->
+    <!--|estructura_contenido_de_preguntas|-->
+    <!--------------------------------------->
+    <main class="contenedor">
+        <section class="introduccion">
+            <div class="icono_seccion">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div>
+                <h2>Preguntas frecuentes</h2>
+                <p>Consulta las preguntas para encontrar información útil sobre tus actividades escolares.</p>
+            </div>
+        </section>
+        <!--------------------------->
+        <!--|contador_de_preguntas|-->
+        <!--------------------------->
+        <div class="informacion">
+            <span><i class="fa-solid fa-list"></i>Preguntas registradas:<strong id="contador">0</strong></span>
+        </div>
+        <section class="lista_preguntas" id="listaPreguntas"></section>
+        <!--------------------------------------->
+        <!--|formulario_para_agregar_preguntas|-->
+        <!--------------------------------------->
+        <section class="formulario">
+            <div class="titulo_formulario">
+                <i class="fa-solid fa-pen-to-square"></i>
+                <h2>Agregar una pregunta</h2>
+            </div>
+            <label for="pregunta">Pregunta</label>
+            <input type="text" id="pregunta" placeholder="Escribe una pregunta...">
+            <label for="respuesta">Respuesta</label>
+            <textarea id="respuesta" placeholder="Escribe la respuesta..."></textarea>
+            <div class="botones_formulario">
+                <button class="boton guardar" id="guardar"><i class="fa-solid fa-floppy-disk"></i>Guardar pregunta</button>
+                <button class="boton limpiar" id="limpiar"><i class="fa-solid fa-eraser"></i>Limpiar</button>
+            </div>
+            <p id="mensaje" class="mensaje"></p>
+        </section>
+        <!------------------------------>
+        <!--|boton_para_eliminar_todo|-->
+        <!------------------------------>
+        <section class="seccion_reset">
+            <button class="boton eliminar_todo" id="eliminarTodo"><i class="fa-solid fa-trash"></i>Eliminar todas las preguntas</button>
+        </section>
+    </main>
+</body>
+</html>
